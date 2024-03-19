@@ -350,7 +350,7 @@ def get_rt_route_trip_statuses(self):
             if entity.trip_update.trip.direction_id is not None:
                     direction_id = str(entity.trip_update.trip.direction_id)
             else:
-                direction_id = DEFAULT_DIRECTION 
+                direction_id = self._direction 
 
             trip_id = entity.trip_update.trip.trip_id   
                
